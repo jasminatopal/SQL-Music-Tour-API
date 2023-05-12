@@ -1,5 +1,6 @@
-'use strict';
-/** @type {import('sequelize-cli').Migration} */
+'use strict'
+const { DataTypes } = require('sequelize')
+
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('event_stages', {
